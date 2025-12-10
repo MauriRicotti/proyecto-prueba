@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauricio Ricotti - Desarrollador Web</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+    <!-- Font Awesome para iconos (carga diferida) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <!-- Bootstrap Icons (carga diferida) -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"></noscript>
+</head>
+<body>
+    <!-- Navbar mejorado: logo izquierda, links centro, CTAs derecha -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="nav-left">
+                <a href="#home" class="logo-link">
+                    <img src="assets/Ultimo logo MR Affinity.png" alt="Logo" class="logo-img">
+                </a>
+            </div>
+
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-outline">Contacto</a>
+            </div>
+
+            <button class="hamburger" aria-label="Abrir menú">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Overlay para drawer -->
+    <div class="drawer-overlay"></div>
+
+    <!-- Drawer (Panel lateral) -->
+    <div class="drawer">
+        <div class="drawer-header">
+            <button class="drawer-close" aria-label="Cerrar menú">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#home" class="drawer-link">Inicio</a>
+            <a href="#about" class="drawer-link">Sobre mí</a>
+            <a href="#projects" class="drawer-link">Proyectos</a>
+            <a href="#skills" class="drawer-link">Habilidades</a>
+            <a href="#contact" class="drawer-link">Blog</a>
+        </nav>
+        <div class="drawer-ctas">
+            <a href="#contact" class="btn btn-outline">Contacto</a>
+            <a href="#contact" class="btn btn-primary">Empezar</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <spline-viewer url="https://prod.spline.design/zC2i8oKm3dcqHtg7/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="hero-content">
+            <div class="hero-pill">Disponible para proyectos</div>
+            <h1 class="hero-title">MAURICIO <span class="hero-accent">RICOTTI</span></h1>
+            <p class="hero-subtitle">Desarrollador Web &amp; Especialista en Sistemas</p>
+            <p class="hero-description">Creo landing pages y sistemas de software diseñados para potenciar tu negocio. Transformo ideas en soluciones digitales que generan resultados.</p>
+
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary hero-cta">Contáctame</a>
+                <a href="#projects" class="btn btn-outline hero-cta">Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-diagram-project" style="font-size: 32px;"></i> Proyectos Destacados</h2>
+            <p class="section-subtitle">Algunos de los trabajos y desarrollos más relevantes que he realizado recientemente.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="assets/proyecto1.jpg" alt="Proyecto 1" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Landing Page para Startup</h3>
+                        <p class="project-description">Diseño y desarrollo de una landing page moderna y responsiva para una startup tecnológica, optimizada para conversión y SEO.</p>
+                        <a href="#" class="project-link" target="_blank">Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="assets/proyecto2.jpg" alt="Proyecto 2" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Gestión</h3>
+                        <p class="project-description">Desarrollo de un sistema web para la gestión de clientes y ventas, con panel de administración y reportes personalizados.</p>
+                        <a href="#" class="project-link" target="_blank">Ver proyecto</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="assets/proyecto3.jpg" alt="Proyecto 3" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Blog Personal</h3>
+                        <p class="project-description">Implementación de un blog personal con panel de edición, integración de comentarios y optimización para dispositivos móviles.</p>
+                        <a href="#" class="project-link" target="_blank">Ver proyecto</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mi Stack de trabajo -->
+    <section class="stack-section" id="stack">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-layer-group" style="font-size: 35px;""></i> Mi Stack de trabajo</h2>
+            <p class="section-subtitle">Herramientas y tecnologías que utilizo habitualmente en proyectos y desarrollos.</p>
+
+            <div class="stack-grid">
+                <article class="card-stack">
+                    <h3><i class="fa-solid fa-code"></i> TECNOLOGÍAS</h3>
+                    <p>Frameworks, librerías y herramientas que uso a diario para crear interfaces dinámicas y robustas.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                </article>
+
+                <article class="card-stack">
+                    <h3><i class="fa-regular fa-palette"></i> DISEÑO</h3>
+                    <p>Diseño visual, prototipado y sistemas de interfaces para experiencias consistentes.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Photoshop</span>
+                        <span class="tech-tag">Adobe XD</span>
+                        <span class="tech-tag">Canva</span>
+                    </div>
+                </article>
+
+                <article class="card-stack">
+                    <h3><i class="fa-solid fa-gears"></i> DESARROLLO</h3>
+                    <p>Entorno y herramientas que uso para desarrollar, versionar y mantener proyectos.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">Git / GitHub</span>
+                        <span class="tech-tag">VS Code</span>
+                        <span class="tech-tag">WordPress</span>
+                    </div>
+                </article>
+
+                <article class="card-stack">
+                    <h3><i class="fa-regular fa-folder-open"></i> ORGANIZACIÓN</h3>
+                    <p>Procesos y gestión de proyectos para garantizar entregas a tiempo y comunicación clara.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">Notion</span>
+                        <span class="tech-tag">Google Drive</span>
+                        <span class="tech-tag">Comunicación</span>
+                    </div>
+                </article>
+
+                <article class="card-stack">
+                    <h3><i class="fa-solid fa-chart-line"></i> SEO &amp; ANALÍTICA</h3>
+                    <p>Optimización y métricas que ayudan a mejorar visibilidad y conversión.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">Search Console</span>
+                        <span class="tech-tag">Google Analytics</span>
+                        <span class="tech-tag">Herramientas SEO (Yoast)</span>
+                    </div>
+                </article>
+
+                <article class="card-stack">
+                    <h3><i class="fa-solid fa-cloud"></i> INTEGRACIONES &amp; DEVOPS</h3>
+                    <p>Despliegues, monitoreo y optimizaciones para producción y mantenimiento.</p>
+                    <div class="tech-list">
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">Hosting</span>
+                        <span class="tech-tag">SSL &amp; Seguridad</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.6/build/spline-viewer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
